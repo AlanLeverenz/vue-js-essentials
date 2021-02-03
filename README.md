@@ -10,7 +10,7 @@ Vue JS Instances
 JS Instance:
 Element - refers to template element by id
 Method - defines functions, named in html
-Directive - template syntax inside of Vue
+Directive - template syntax inside of Vue (output)
 
 Imperative vs Declarative
 
@@ -32,10 +32,11 @@ Rules (with properties)
 4 if input is updated, rerender the template (automatic result)
 
 Vue API
-Data -> defines the 'initial state' of our Vue instance
+Data -> defines the 'initial state' of our Vue instance (properties)
 Methods -> defines the different ways our state can change
 Computed -> defines how to turn the current data into viewable results
 
 Data -> how everything starts (defining variables)
 Methods -> changes data (define functions)
 Computed -> turns data into viewable stuff
+
