@@ -1,4 +1,9 @@
 new Vue({
-    el: '#app'
+    el: '#app',
+    methods: {
+      onInput: function() {
+        console.log('Someone typed something');
+      }
+    }
     
   });
