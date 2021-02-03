@@ -36,6 +36,6 @@ Data -> defines the 'initial state' of our Vue instance
 Methods -> defines the different ways our state can change
 Computed -> defines how to turn the current data into viewable results
 
-Data -> how everything starts
-Methods -> changes data
+Data -> how everything starts (defining variables)
+Methods -> changes data (define functions)
 Computed -> turns data into viewable stuff
