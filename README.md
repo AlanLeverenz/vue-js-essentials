@@ -40,3 +40,9 @@ Data -> how everything starts (defining variables)
 Methods -> changes data (define functions)
 Computed -> turns data into viewable stuff
 
+Only need computed functions when necessary
+Can insert data properties or data functions into output without calculating some other outcome
+No need for "this."
+
+Interpolated values in tempates can have simple javascript expressions - string interpolation (no if's and for loops)
+
