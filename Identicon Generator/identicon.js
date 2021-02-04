@@ -2,15 +2,11 @@ new Vue({
     el: '#app',
     data: { // initialize our list of 'ingredients'
       textInput: ''
-      
     },
     computed: { // turn data into viewable values
       identicon: function() {
         return jdenticon.toSvg(this.textInput, 200);
       },
-      reverse: function() {
-        return this.textInput.split('').reverse().join('');
-      }
     },    
     methods: { // use these functions to change data
       onInput: function(event) {
@@ -28,7 +24,7 @@ new Vue({
   
       <div>
         Output: 
-        {{ reverse }}
+        <div v-html="identicon"></div>
       </div>
     </div>
     `
