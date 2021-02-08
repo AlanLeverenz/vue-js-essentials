@@ -16,9 +16,15 @@ new Vue({
 }).$mount('#app');
 */
 
+// ****************
 /*
-Vue.createApp(App).mount('#app')
+import Vue, { createApp } from 'vue';
+import App from './App';
+
+createApp(App).mount('#app')
 */
+
+// ****************
 
 import { createApp } from 'vue'
 import App from './App.vue'
