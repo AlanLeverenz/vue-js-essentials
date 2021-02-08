@@ -46,3 +46,9 @@ No need for "this."
 
 Interpolated values in tempates can have simple javascript expressions - string interpolation (no if's and for loops)
 
+Vue Component: class
+Represents a set of rules for getting content on the screen and how users can interact with it.
+
+Vue Instance: class instance
+An 'instance' of a Vue Component
+
