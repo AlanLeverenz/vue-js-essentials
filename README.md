@@ -61,3 +61,9 @@ Directive for input:
 
 Communicate parent to child by passing props
 Communicate child to parent by emitting events
+
+Vue Instance can return an object or a function
+    => data: textInput: ''
+
+Vue Component must return a function
+    => data: function() { textInput: ''} }
