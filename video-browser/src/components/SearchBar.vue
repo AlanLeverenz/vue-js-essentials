@@ -8,7 +8,7 @@
 <script>
 export default {
     // v-on:input="onInput" is longhand version of input directive
-    // emit function event has name and value
+    // emit function event has name (shared with parent) and value
     // $ is not a special character
     name: 'SearchBar',
     methods: {
