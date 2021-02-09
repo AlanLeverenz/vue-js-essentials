@@ -52,3 +52,12 @@ Represents a set of rules for getting content on the screen and how users can in
 Vue Instance: class instance
 An 'instance' of a Vue Component
 
+Component Vue File:
+Has template, script, and style elements
+Need to match script method to a template directive
+
+Directive for input:
+@input: or v-on:input
+
+Communicate parent to child by passing props
+Communicate child to parent by emitting events
