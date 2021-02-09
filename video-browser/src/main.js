@@ -1,7 +1,8 @@
-// import Vue from 'vue';
-// import App from './App';
-
+// *****************
 /*
+import Vue from 'vue';
+import App from './App';
+
 new Vue ({
     el: '#app',
     render: function(createElement) {
@@ -30,3 +31,4 @@ import { createApp } from 'vue'
 import App from './App.vue'
 
 createApp(App).mount('#app')
+
