@@ -67,3 +67,14 @@ Vue Instance can return an object or a function
 
 Vue Component must return a function
     => data: function() { textInput: ''} }
+
+Template directives:
+v-bind:childVideos="parentVideos"
+
+left side is what appears in the child
+right side is what appears in the parent
+
+myVideos exists in the parent
+    data() {
+        return { parentVideos: [] }
+    },

@@ -1,8 +1,7 @@
 <template>
     <div>
         <SearchBar @termChange="onTermChange"></SearchBar>
-        <VideoList></VideoList>
-        {{ videos.length }}
+        <VideoList :videos="videos"></VideoList>
     </div>
 </template>
 
@@ -17,6 +16,8 @@ const API_KEY = 'AIzaSyAgLTkgOGxPKhcAl4mzcppU1RuQHye57Hw';
 // components object has key and value
 // can shorten to single word if key and value are the same
 // @ is in place of v-on: directive syntax
+// :videos is same as v-bind:videos
+
 export default {
     name: 'App',
     components: {
