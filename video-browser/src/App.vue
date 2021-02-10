@@ -12,8 +12,6 @@ import SearchBar from './components/SearchBar';
 import VideoList from './components/VideoList';
 
 const API_KEY = YouTubeAPI;
-console.log(API_KEY);
-// API_KEY = 'AIzaSyAgLTkgOGxPKhcAl4mzcppU1RuQHye57Hw';
 
 // insert component tag inside template for html viewing
 // components object has key and value
