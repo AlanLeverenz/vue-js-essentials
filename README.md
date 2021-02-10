@@ -71,6 +71,9 @@ Vue Component must return a function
 Template directives:
 v-bind:childVideos="parentVideos"
 
+( : = v-bind )
+( @ = v-on: )
+
 left side is what appears in the child
 right side is what appears in the parent
 
