@@ -16,8 +16,8 @@ const API_KEY = YouTubeAPI;
 // insert component tag inside template for html viewing
 // components object has key and value
 // can shorten to single word if key and value are the same
-// @ is in place of v-on: directive syntax
-// :videos is same as v-bind:videos
+// @ is same as v-on: directive syntax wired to events in child
+// :videos is same as v-bind:videos, re-renders props in child)
 
 export default {
     name: 'App',
