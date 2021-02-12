@@ -1,7 +1,11 @@
 <template>
     <ul>
-        VideoList
-        {{ videos.length }}
+        <VideoListItem 
+            v-for="video in videos" 
+            v-bind:video="video" 
+            :key="video.id">
+        <div>video</div>
+        </VideoListItem>
     </ul>
 </template>
 
@@ -10,6 +14,9 @@
 // props: ['videos'] is an array element
 // props: { videos: } is an array of object
 // Array sets the type
+// v-for directive is building lists
+// had to use "video" and insert a v-bind key to avoid errors
+
 import VideoListItem from './VideoListItem';
 
 export default {
