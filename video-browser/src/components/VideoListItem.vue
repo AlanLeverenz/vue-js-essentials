@@ -1,5 +1,5 @@
 <template>
-    <li class="list-group-item media">
+    <li class="list-group-item media" @click="onVideoSelect">
         <img class="mr-3" :src="thumbnailUrl" />
         <div class="media-body">
             {{ video.snippet.title }}
@@ -10,12 +10,20 @@
 <script>
 // use computed functions can refactor code to be simpler
 // referencing a prop requires "this"
+// need click event handler @click
+// "this" is prop passed by parent
+
 export default {
     name: 'VideoListItem',
     props: ['video'],
     computed: {
         thumbnailUrl() {
             return this.video.snippet.thumbnails.default.url;
+        }
+    },
+    methods: {
+        onVideoSelect() {
+            this.$emit('videoSelect', this.video)
         }
     }
 }
