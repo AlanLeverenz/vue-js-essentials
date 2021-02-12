@@ -56,6 +56,11 @@ Component Vue File:
 Has template, script, and style elements
 Need to match script method to a template directive
 
+Event emitters:
+Native event (html)
+Vue-specific event
+
+
 Directive for input:
 @input: or v-on:input
 
