@@ -2,8 +2,8 @@
     <ul>
         <VideoListItem 
             v-for="video in videos" 
-            v-bind:video="video" 
-            :key="video.id">
+            :video="video" 
+            :key="video.etag">
         <div>video</div>
         </VideoListItem>
     </ul>
