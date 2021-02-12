@@ -5,7 +5,7 @@
             :video="video" 
             :key="video.etag">
             @videoSelect="onVideoSelect"
-        <div>video</div>
+        >
         </VideoListItem>
     </ul>
 </template>
