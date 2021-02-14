@@ -1,6 +1,7 @@
 <template>
     <div class="container">
         <SearchBar @termChange="onTermChange"></SearchBar>
+        <VideoDetail :video="video" />
         <div class="row">
             <VideoList @videoSelect="onVideoSelect" :videos="videos"></VideoList>
         </div>
@@ -12,6 +13,7 @@ import { YouTubeAPI } from './../api.js';
 import axios from 'axios';
 import SearchBar from './components/SearchBar';
 import VideoList from './components/VideoList';
+import VideoDetail from './components/VideoDetail';
 
 const API_KEY = YouTubeAPI;
 
@@ -25,7 +27,8 @@ export default {
     name: 'App',
     components: {
         SearchBar,
-        VideoList
+        VideoList,
+        VideoDetail
     },
     data() {
         return { videos: [] }
