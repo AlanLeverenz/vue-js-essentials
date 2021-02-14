@@ -1,6 +1,9 @@
 <template>
-    <div class="details" v-if="video">
-        {{ video.snippet.title }}
+    <div v-if="video">
+        <div class="details">
+            <h4>{{ video.snippet.title }}</h4>
+            <p>{{ video.snippet.description }}</p>
+        </div>    
     </div>
 </template>
 
@@ -18,5 +21,6 @@ export default {
         padding: 10px;
         border: 1px solid #ddd;
         border-radius: 4px;
+        color: blue;
     }
 </style>

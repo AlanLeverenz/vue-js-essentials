@@ -38,16 +38,17 @@ export default {
             this.selectedVideo = video;
         },
         onTermChange(searchTerm) {
-            axios.get('https://www.googleapis.com/youtube/v3/search', {
-                params: {
-                    key: API_KEY,
-                    type: 'video',
-                    part: 'snippet',
-                    q: searchTerm
-                }
-            }).then(response => {
-                // storing response in this.videos
-                this.videos = response.data.items
+            axios.
+                get('https://www.googleapis.com/youtube/v3/search', {
+                    params: {
+                        key: API_KEY,
+                        type: 'video',
+                        part: 'snippet',
+                        q: searchTerm
+                    }
+                }).then(response => {
+                    // storing response in this.videos
+                    this.videos = response.data.items
             });
         }
     }
