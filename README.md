@@ -86,3 +86,7 @@ myVideos exists in the parent
     data() {
         return { parentVideos: [] }
     },
+
+Cycle of events and props
+VideoListItem: emit, VideoList: listen/emit, Parent: listen/data
+Parent: props -> VideoDetail

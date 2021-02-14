@@ -23,7 +23,8 @@ export default {
     },
     methods: {
         onVideoSelect() {
-            this.$emit('videoSelect', this.video)
+            this.$emit('videoSelect', this.video);
+            // console.log("Hello there");
         }
     }
 }
