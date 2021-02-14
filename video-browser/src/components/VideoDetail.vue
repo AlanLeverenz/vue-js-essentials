@@ -1,12 +1,11 @@
 <template>
-    <div class="details">
-        <h4>{{ video.snippet.title }}</h4>
-        <p>{{ video.snippet.description }}</p>
+    <div class="details" v-if="video">
+        {{ video.snippet.title }}
     </div>
 </template>
 
 <script>
-// ({ }) holds a variable object that needs interpreting
+// {{ }} holds a variable object that needs interpreting
 export default {
     name: 'VideoDetail',
     props: ['video']
