@@ -8,10 +8,6 @@
 </template>
 
 <script>
-// use computed functions can refactor code to be simpler
-// referencing a prop requires "this"
-// need click event handler @click
-// "this" is prop passed by parent
 
 export default {
     name: 'VideoListItem',
