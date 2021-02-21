@@ -8,10 +8,12 @@ const state = {
 const getters = {
     isLoggedIn: state => !!state.token
     }
-};
 
+// commit function applies the setToken mutation
 const actions = {
-
+    logout: ({ commit }) => {
+        commit('setToken', null);
+    }
 };
 
 // updates const state directly
