@@ -91,10 +91,7 @@ Cycle of events and props
 VideoListItem: emit, VideoList: listen/emit, Parent: listen/data
 Parent: props -> VideoDetail
 
-Part 2 ======================
+images project ===================
 
-Event exercise
-Create a method that names the function and what it does
-Call the click event as a template directive, calling the function
-
-Component Data exercise
+Vuex store includes:
+state, getters, mutations, actions
