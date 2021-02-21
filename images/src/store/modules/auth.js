@@ -14,7 +14,10 @@ const actions = {
 
 };
 
+// updates const state directly
 const mutations = {
-
+    setToken: (state, token) => {
+        state.token = token;
+    }
 };
 
