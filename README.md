@@ -95,3 +95,10 @@ images project ===================
 
 Vuex store includes:
 state, getters, mutations, actions
+
+Map Actions:
+import mapActions
+define methods
+setup mapActions
+pass in array with list of strings of all actions
+(Vuex will look at all the actions in the module)
