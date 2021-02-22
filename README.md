@@ -110,3 +110,6 @@ Wiring up a Vue Router:
 1 create Vue Router instance, tell it about the routes
 2 tell Vue instance that the Router exists
 3 tell Vue Router where to put a component when it matches a route
+
+By default, Vue Router applies a Hash Router (localhost: 8080/#MY/SPECIAL/ROUTE)
+Browser Router inserts route before the hash (localhost: 8080:/MY/SPECIAL/ROUTE#/other/stuff)
