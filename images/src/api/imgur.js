@@ -2,7 +2,6 @@ import { myAPI } from "../../api";
 
 import qs from 'qs';
 
-
 const CLIENT_ID = myAPI.Client_ID;
 const ROOT_URL = myAPI.Root_URL;
 
