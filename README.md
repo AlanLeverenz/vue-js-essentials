@@ -111,5 +111,11 @@ Wiring up a Vue Router:
 2 tell Vue instance that the Router exists
 3 tell Vue Router where to put a component when it matches a route
 
-By default, Vue Router applies a Hash Router (localhost: 8080/#MY/SPECIAL/ROUTE)
-Browser Router inserts route before the hash (localhost: 8080:/MY/SPECIAL/ROUTE#/other/stuff)
+By default, Vue Router applies a Hash Router (localhost: 8080/#MY/SPECIAL/ROUTE) right of hash
+Browser Router inserts route before the hash (localhost: 8080:/MY/SPECIAL/ROUTE#/other/stuff) left of hash
+
+Lifecycle events: (commponent rendering)
+1 User visits /oauth2/callback#access_token=...
+2 Router shows AuthHandler component on screen
+3 AuthHandler instantly calls 'finalizeLogin' action
+4 'finalizeLogin' extracts the access token and calls 'setToken' mutation
