@@ -97,8 +97,11 @@ Vuex store includes:
 state, getters, mutations, actions
 
 Map Actions:
-import mapActions
-define methods
-setup mapActions
+import mapActions into component
+define action to call in methods
+setup mapActions that will be exported
 pass in array with list of strings of all actions
 (Vuex will look at all the actions in the module)
+
+Vue Router library:
+can initiate actions based on the current URL
