@@ -1,8 +1,9 @@
 import api from '../../api/imgur';
 import qs from 'qs';
 
+// use localStorage for token
 const state = {
-    token: null
+    token: window.localStorage.getItem('imgur_token')
 };
 
 // state is an argument to a function, not THE state
@@ -23,7 +24,9 @@ const actions = {
         const query = qs.parse(hash.replace('#', ''));
         // gets the access_token string from query
         // updates the 'token' state
-        commit('setToken', query.access_token)
+        commit('setToken', query.access_token);
+        // assign token to localStorage
+        window.localStorage.setItem('imgur_token', query.access_token);
     },
     logout: ({ commit }) => {
         commit('setToken', null);
