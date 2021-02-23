@@ -4,6 +4,8 @@ import App from './App';
 // webpack assume there is an index.js file inside store
 import store from './store';
 import AuthHandler from './components/AuthHandler';
+import ImageList from './components/ImageList';
+import UploadForm from './components/UploadForm';
 
 // tell Vue library that the Vue Router exists
 Vue.use(VueRouter);
@@ -15,6 +17,8 @@ Vue.use(VueRouter);
 export const router = new VueRouter({
     mode: 'history',
     routes: [
+        { path: '/', component: ImageList },
+        { path: '/upload', component: UploadForm },
         { path: '/oauth2/callback', component: AuthHandler }
 
     ]
