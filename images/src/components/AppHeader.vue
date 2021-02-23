@@ -3,10 +3,15 @@
         <a href="/" class="active item">
         Image Storage
         </a>
-        {{ isLoggedIn }}
 
     <div class="right menu">
-        <a href="#" class="ui item" @click="login">
+        <div v-if="isLoggedIn">
+            Galleries
+            upload
+            logout
+        </div>
+
+        <a v-else href="#" class="ui item" @click="login">
             Login
         </a>
     </div>
