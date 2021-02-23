@@ -1,5 +1,8 @@
 import api from '../../api/imgur';
 import qs from 'qs';
+// named export is in curly braces
+// the router avoids a full page reload
+import { router } from '../../main';
 
 // use localStorage for token
 const state = {
@@ -27,6 +30,8 @@ const actions = {
         commit('setToken', query.access_token);
         // assign token to localStorage
         window.localStorage.setItem('imgur_token', query.access_token);
+        // navigate user to home page
+        router.push('/')
     },
     logout: ({ commit }) => {
         commit('setToken', null);

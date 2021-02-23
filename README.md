@@ -119,3 +119,9 @@ Lifecycle events: (commponent rendering)
 2 Router shows AuthHandler component on screen
 3 AuthHandler instantly calls 'finalizeLogin' action
 4 'finalizeLogin' extracts the access token and calls 'setToken' mutation
+
+Route -> Component:
+/ -> ImageList
+/upload -> UploadForm
+/oauth2/callback -> AuthHandler (extract token from URL, finalizeLogin)
+Note: Based on URL, VueRouter will take a component and provide it to the 'App' component.

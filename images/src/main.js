@@ -11,7 +11,8 @@ Vue.use(VueRouter);
 // Vue Router instance
 // set path and component to apply
 // history directs to Browser Router (ignores hash)
-const router = new VueRouter({
+// export router from file
+export const router = new VueRouter({
     mode: 'history',
     routes: [
         { path: '/oauth2/callback', component: AuthHandler }
