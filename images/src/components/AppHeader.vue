@@ -5,10 +5,10 @@
         </a>
 
     <div class="right menu">
-        <div v-if="isLoggedIn">
-            Galleries
-            upload
-            logout
+        <div v-if="isLoggedIn" class="horizontal">
+            <a class="item">Galleries</a>
+            <a class="item">Upload</a>
+            <a class="item">Logouts</a>
         </div>
 
         <a v-else href="#" class="ui item" @click="login">
@@ -31,3 +31,11 @@ export default {
 
 }
 </script>
+
+<style scoped>
+/* put buttons side by side */
+.horizontal {
+    display: flex;
+    flex-direction: row;
+}
+</style>
