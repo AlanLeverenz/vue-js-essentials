@@ -3,6 +3,7 @@
         <a href="/" class="active item">
         Image Storage
         </a>
+        {{ isLoggedIn }}
 
     <div class="right menu">
         <a href="#" class="ui item" @click="login">
@@ -13,11 +14,15 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex';
+import { mapActions, mapGetters } from 'vuex';
+// mapGetters gets data from auth module 
 // methods map actions to the component
 // use spread ...mapActions to add other actions
+// computed reads data 
 export default {
     name: 'AppHeader',
-    methods: mapActions(['login'])
+    computed: mapGetters(['isLoggedIn']),
+    methods: mapActions(['login']),
+
 }
 </script>
