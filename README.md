@@ -125,3 +125,6 @@ Route -> Component:
 /upload -> UploadForm
 /oauth2/callback -> AuthHandler (extract token from URL, finalizeLogin)
 Note: Based on URL, VueRouter will take a component and provide it to the 'App' component.
+
+Avoid using anchor tags because they will refresh the whole page. Instead, use VueRouter.
+Login/logout are not navigating so can use anchor tags.
