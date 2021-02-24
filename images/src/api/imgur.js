@@ -14,11 +14,11 @@ export default {
         // window.location causes user's browser to navigate to this URL
         window.location = `${ROOT_URL}/oauth2/authorize?${qs.stringify(querystring)}`;
     },
-    fetchImages() {
+    fetchImages(token) {
         return axios.get(`${ROOT_URL}/3/account/me/images`, {
             headers: {
                 Authorization: `Bearer ${token}`
             }
-        })
+        });
     }
 };
