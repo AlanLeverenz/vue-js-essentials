@@ -128,3 +128,5 @@ Note: Based on URL, VueRouter will take a component and provide it to the 'App' 
 
 Avoid using anchor tags because they will refresh the whole page. Instead, use VueRouter.
 Login/logout are not navigating so can use anchor tags.
+
+'commit' updates the state inside the module
