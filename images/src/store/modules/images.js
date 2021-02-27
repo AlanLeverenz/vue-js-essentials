@@ -15,19 +15,20 @@ const getters = {
 // commit changes state (action, values)
 const actions = {
     async fetchImages({ rootState, commit }) {
-        const { token } = rootState.auth
+        const { token } = rootState.auth;
         const response = await api.fetchImages(token);
         commit('setImages', response.data.data);
     },
+    // rootState provides access to all the store
     async uploadImages({ rootState }, images) {
         // get access token
         const { token } = rootState.auth;
 
-            // Call our API module to do the upload
-    await api.uploadImages(images, token);
+        // Call our API module to do the upload
+        await api.uploadImages(images, token);
 
-    // Redirect our user to ImageList component
-    router.push('/');
+        // Redirect our user to ImageList component
+        router.push('/');
     }
 };
 
