@@ -20,5 +20,19 @@ export default {
                 Authorization: `Bearer ${token}`
             }
         });
+    },
+    // Array turns object of arrays into an Array
+    // formData object. get the real object of a reference
+    uploadImages(images, token) {
+        Array.from(images).map(image => {
+            const formData = new FormData();
+            formData.append('image', image);
+
+            return axios.post('`${ROOT_URL}/3/image', formData, { 
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            })
+        })
     }
 };
