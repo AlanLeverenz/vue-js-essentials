@@ -1,11 +1,18 @@
 <template>
     <div class="dropper">
-        <input type="file" @change="uploadImages"/>
+        <input 
+            type="file" 
+            @change="uploadImages($event.target.files)" 
+            multiple
+            accept="image/*"
+            />
         <span>Drag files here!</span>
     </div>
 </template>
 
 <script>
+// $event is a handle to get the file list before placed in the action
+// multiple allows multiple files to be selected
 import { mapActions } from 'vuex';
 export default {
     name: 'UploadForm',
