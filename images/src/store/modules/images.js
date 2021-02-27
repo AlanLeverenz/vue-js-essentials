@@ -28,6 +28,7 @@ const actions = {
         await api.uploadImages(images, token);
 
         // Redirect our user to ImageList component
+        // send to images list component
         router.push('/');
     }
 };

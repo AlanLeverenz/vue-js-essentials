@@ -22,9 +22,10 @@ export default {
         });
     },
     // Array turns object of arrays into an Array
-    // formData object. get the real object of a reference
+    // formData. get the object (file) of a reference (appends)
+    // Promise.all waits for all promises to be completed
     uploadImages(images, token) {
-        Array.from(images).map(image => {
+        const promises = Array.from(images).map(image => {
             const formData = new FormData();
             formData.append('image', image);
 
@@ -34,5 +35,7 @@ export default {
                 }
             })
         })
+
+        return Promise.all(promises);
     }
 };
